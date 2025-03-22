@@ -72,6 +72,10 @@
   .input-wrapper input::placeholder {
     color: #292d33;
   }
+
+  .input-wrapper input:focus {
+    outline: none;
+  }
   
   .input-wrapper button {
     height: 32px;
@@ -122,5 +126,4 @@
       line-height: 28px;
     }
   }
-  
-  
+
