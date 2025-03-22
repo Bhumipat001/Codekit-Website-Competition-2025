@@ -1,0 +1,137 @@
+.footer {
+  width: 100%;
+  min-width: 320px;
+  background-color: #002b4e;
+  color: #fff;
+  padding: 50px 20px 0;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.logo-section {
+  flex: 1 1 285px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 141px;
+  height: 46px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9497a1;
+  margin-bottom: 20px;
+  letter-spacing: -0.21px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 25px;
+  height: 25px;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+  opacity: 0.8;
+}
+
+.links-section {
+  display: flex;
+  flex: 2 1 613px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.quick-links, .service-links, .contact-info {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.footer h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 31px;
+  letter-spacing: -0.24px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer ul li a, .footer ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9497a1;
+  text-decoration: none;
+  letter-spacing: -0.21px;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 34px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #607d94;
+  box-sizing: border-box;
+}
+
+.copyright p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #607d94;
+  margin: 0;
+  letter-spacing: -0.21px;
+}
+
+.legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.legal-links a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #607d94;
+  text-decoration: none;
+  letter-spacing: -0.21px;
+  transition: color 0.3s;
+}
+
+.legal-links a:hover {
+  color: #fff;
+}
+

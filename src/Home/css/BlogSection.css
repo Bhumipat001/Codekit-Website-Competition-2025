@@ -1,0 +1,142 @@
+.blog-section {
+  width: 100%;
+  min-width: 3000px;
+  padding: 100px 0;
+  background-color: #f0f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: -0.69px;
+  color: #292d33;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 730px;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 150%;
+  justify-content: center;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 30px 35px 45px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.21px;
+  color: #9497a1;
+}
+
+.content-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.33px;
+  color: #292d33;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #9497a1;
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  padding: 3px 11px;
+  border-radius: 6px;
+  border: 1px solid #f1f6fa;
+}
+
+.tag span {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.21px;
+  color: #185cff;
+}
+
+.learn-more {
+  background: #185cff;
+  border-radius: 6px;
+  padding: 11px 46px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #0044cc;
+}
+
+@media (max-width: 1200px) {
+  .blog-cards {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 36px;
+    line-height: 48px;
+    padding: 0 20px;
+  }
+  
+  .blog-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+

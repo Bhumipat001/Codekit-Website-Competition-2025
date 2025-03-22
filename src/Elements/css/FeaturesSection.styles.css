@@ -1,0 +1,147 @@
+.features-section {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-block-1 {
+  padding: 120px 405px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.title-container {
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 57px;
+  font-weight: 800;
+  line-height: 65.5px;
+  letter-spacing: -0.855px;
+  color: #292d33;
+  margin: 0;
+}
+
+.highlight {
+  color: #185cff;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: -0.3px;
+  color: #9497a1;
+  max-width: 540px;
+}
+
+.discover-button, .learn-button {
+  background-color: #185cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 46px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.discover-button:hover, .learn-button:hover {
+  background-color: #0044cc;
+}
+
+.features-block-2 {
+  background-color: #f1f6fa;
+  display: flex;
+  align-items: center;
+  padding-left: 20vw;
+}
+
+.image-container {
+  flex: 0 0 929px;
+  height: 740px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  padding: 191px 405px 191px 46px;
+  max-width: 540px;
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -0.57px;
+  color: #292d33;
+  margin: 0 0 30px 0;
+}
+
+@media (max-width: 1440px) {
+  .features-block-1 {
+    padding: 80px 40px;
+  }
+  
+  .content-container {
+    padding: 80px 40px;
+  }
+  
+  .image-container {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-block-1 {
+    padding: 60px 20px;
+  }
+  
+  .features-block-2 {
+    flex-direction: column;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .content-container {
+    padding: 40px 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+

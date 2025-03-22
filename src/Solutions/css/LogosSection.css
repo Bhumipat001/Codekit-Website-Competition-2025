@@ -1,0 +1,55 @@
+.clients-logos-section {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100vw;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.clients-logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10vw;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.logo-wrapper:hover {
+  opacity: 0.8;
+}
+
+.client-logo {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .clients-logos-section {
+    padding: 40px 20px;
+  }
+
+  .clients-logos-container {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .client-logo {
+    max-height: 30px;
+  }
+}
+

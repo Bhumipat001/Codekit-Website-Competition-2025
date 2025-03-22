@@ -1,0 +1,157 @@
+.reviews-section {
+  padding: 120px 40px;
+  background-color: #f0f9ff;
+  min-width: 1200px;
+  width: 100%;
+  min-width: 100vw;
+}
+
+.title-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+  left: 10%;
+}
+
+.title-container h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: -0.57px;
+  line-height: 56px;
+  color: #292d33;
+  margin: 0;
+}
+
+.title-line {
+  width: 95px;
+  height: 4px;
+  background-color: #185cff;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  right: 40px;
+  margin-top: -96px;
+}
+
+.control-btn {
+  width: 110px;
+  height: 60px;
+  background-color: #c9dcec;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+  background-color: #b0c9e0;
+}
+
+.control-btn.disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.control-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.reviews-container {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  left: 10%;
+}
+
+.review-card {
+  background-color: #ffffff;
+  padding: 35px;
+  width: 470px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.reviewer-info {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.reviewer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviewer-details h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 24px;
+  color: #292d33;
+  margin: 0;
+}
+
+.reviewer-details p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  line-height: 24px;
+  color: #9497a1;
+  margin: 0;
+}
+
+.review-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 28px;
+  color: #9497a1;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .reviews-section {
+    padding: 60px 20px;
+  }
+
+  .controls {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 470px;
+  }
+}
+

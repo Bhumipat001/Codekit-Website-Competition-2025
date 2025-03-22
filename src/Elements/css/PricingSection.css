@@ -1,0 +1,168 @@
+.pricing-section {
+  width: 100%;
+  max-width: 1510px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pricing-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -0.57px;
+  color: #292d33;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  width: 100%;
+  max-width: 255px;
+  padding: 35px 20px;
+  background: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+.pricing-card.highlighted {
+  background: #185cff;
+  color: #ffffff;
+}
+
+.title-price {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plan-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  color: inherit;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: -0.39px;
+  color: inherit;
+}
+
+.billing-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn {
+  padding: 4px 10px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  border-radius: 6px;
+  border: 1px solid #185cff;
+  background: transparent;
+  color: #185cff;
+  cursor: pointer;
+}
+
+.highlighted .toggle-btn {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.toggle-btn.active {
+  background: #185cff;
+  color: #ffffff;
+}
+
+.highlighted .toggle-btn.active {
+  background: #ffffff;
+  color: #185cff;
+}
+
+.choose-plan-btn {
+  width: 100%;
+  padding: 10px 14px;
+  background: #185cff;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.highlighted .choose-plan-btn {
+  background: #ffffff;
+  color: #185cff;
+}
+
+.choose-plan-btn:hover {
+  background: #0044cc;
+}
+
+.highlighted .choose-plan-btn:hover {
+  background: #f0f0f0;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.checkmark {
+  width: 25px;
+  height: 25px;
+}
+
+.feature-item span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.21px;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    max-width: 100%;
+  }
+}
+

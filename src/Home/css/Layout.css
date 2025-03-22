@@ -1,0 +1,21 @@
+body, html, .layout {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.layout > * {
+  width: 100%;
+  max-width: 1920px;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+}

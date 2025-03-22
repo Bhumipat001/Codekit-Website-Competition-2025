@@ -1,0 +1,153 @@
+.footer-section {
+  width: 100%;
+  padding: 50px 40px;
+  background-color: #002b4e;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 100vw;
+}
+
+.footer-content {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 285px;
+}
+
+.logo {
+  width: 141px;
+  height: 46px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #9497a1;
+  letter-spacing: -0.21px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .links-section {
+    flex-direction: row;
+    gap: 117px;
+  }
+}
+
+.quick-links,
+.service-links,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.24px;
+  color: #fff;
+  margin-bottom: 31px;
+}
+
+a {
+  color: #9497a1;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.21px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.contact-info p {
+  color: #9497a1;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.21px;
+}
+
+.footer-bottom {
+  max-width: 1110px;
+  margin: 34px auto 0;
+}
+
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #607d94;
+  margin: 0;
+}
+
+.copyright-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 34px;
+  color: #607d94;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.21px;
+}
+
+@media (min-width: 768px) {
+  .copyright-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.legal-links {
+  display: flex;
+  gap: 95px;
+}
+
+.legal-links a {
+  color: #607d94;
+}
+
+.legal-links a:hover {
+  color: #fff;
+}
+

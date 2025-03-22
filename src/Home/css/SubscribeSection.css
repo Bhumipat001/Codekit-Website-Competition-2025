@@ -1,0 +1,126 @@
+.subscribe-section {
+    background-color: #185cff;
+    min-width: 3000px;
+    padding: 80px 20px;
+    min-height: 306px;
+    width: 100%;
+  }
+  
+  .subscribe-content {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .title-description {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .title-description h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.57px;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .title-description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .subscribe-form {
+    min-width: 445px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background: #c9dcec;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-wrapper input {
+    flex: 1;
+    height: 100%;
+    padding: 15px 25px;
+    border: none;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.21px;
+    color: #292d33;
+  }
+  
+  .input-wrapper input::placeholder {
+    color: #292d33;
+  }
+  
+  .input-wrapper button {
+    height: 32px;
+    margin-right: 11px;
+    padding: 0 46px;
+    background: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    color: #292d33;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-wrapper button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 1024px) {
+    .subscribe-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .subscribe-form {
+      min-width: auto;
+      width: 100%;
+      max-width: 445px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .subscribe-section {
+      padding: 60px 20px;
+    }
+  
+    .title-description h2 {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  
+    .title-description p {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  
+  

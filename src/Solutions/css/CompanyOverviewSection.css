@@ -1,0 +1,98 @@
+.company-overview-section {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  gap: 0px;
+  right: 3%;
+  background-color: #FFFFFF;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.section-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -0.57px;
+  color: #292D33;
+  margin: 0;
+}
+
+.title-line {
+  width: 95px;
+  height: 4px;
+  background-color: #185CFF;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 13vw;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 200px;
+  max-width: 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-description {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  color: #9497A1;
+  margin: 0;
+  min-height: 48px;
+}
+
+.stat-number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 100%;
+  letter-spacing: -1.875px;
+  color: #185CFF;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .stats-container {
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-overview-section {
+    padding: 30px 15px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  
+  .stat-number {
+    font-size: 60px;
+  }
+}
+

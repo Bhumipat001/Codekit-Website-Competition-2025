@@ -1,0 +1,209 @@
+.pricing-section {
+  position: relative;
+  padding: 40px 20px;
+  margin: 0 auto;
+  min-width: 100vw;
+  background-color: #FFFFFF;
+  right: 1%;
+}
+
+.pricing-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  left: 5%;
+}
+
+.title-line {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title-line h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -0.57px;
+  color: #292D33;
+  width: 500%;
+  margin: 0;
+}
+
+.line {
+  width: 95px;
+  height: 4px;
+  background-color: #185CFF;
+}
+
+.pricing-toggle {
+  position: relative;
+  background: #F0F9FF;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  right: 8%;
+}
+
+.toggle-btn {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  cursor: pointer;
+  background: transparent;
+  color: #292D33;
+}
+
+.toggle-btn.active {
+  background: #185CFF;
+  color: white;
+  font-weight: 600;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  flex: 1;
+  min-width: 320px;
+  max-width: 350px;
+  background: white;
+  border-radius: 6px;
+  padding: 50px 35px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title-price {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title-price h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.33px;
+  color: #292D33;
+  margin: 0;
+}
+
+.price-container {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.price {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -0.57px;
+  color: #292D33;
+}
+
+.price-period {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: -0.3px;
+  color: #292D33;
+}
+
+.description {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.33px;
+  color: #292D33;
+  margin: 0;
+}
+
+.get-started-btn {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  cursor: pointer;
+}
+
+.get-started-btn.solid {
+  background: #185CFF;
+  color: white;
+  border: none;
+}
+
+.get-started-btn.outline {
+  background: white;
+  color: #185CFF;
+  border: 1px solid #185CFF;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.checkmark {
+  width: 25px;
+  height: 25px;
+}
+
+.feature span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #292D33;
+}
+
+@media (max-width: 768px) {
+  .pricing-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+

@@ -1,0 +1,41 @@
+.client-logos {
+  width: 100%;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.client-logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1110px;
+}
+
+.logo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+}
+
+.client-logo {
+  max-width: 100px;
+  height: auto;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .client-logos-container {
+    flex-direction: column;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 10px;
+  }
+}
+
