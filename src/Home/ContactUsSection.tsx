@@ -3,10 +3,24 @@ import './css/ContactUsSection.css';
 
 const ContactUsSection: React.FC = () => {
   const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    theme: '',
+    message: ''
+  });
+
+  const [placeholders] = useState({
     name: 'Andrea',
     email: 'andrea@gmail.com',
     theme: 'Job',
     message: 'Your message'
+  });
+
+  const [touched, setTouched] = useState({
+    name: false,
+    email: false,
+    theme: false,
+    message: false
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -14,6 +28,13 @@ const ContactUsSection: React.FC = () => {
     setFormData(prev => ({
       ...prev,
       [name]: value
+    }));
+  };
+
+  const handleInputFocus = (fieldName: string) => {
+    setTouched(prev => ({
+      ...prev,
+      [fieldName]: true
     }));
   };
 
@@ -56,8 +77,9 @@ const ContactUsSection: React.FC = () => {
             <input
               type="text"
               name="name"
-              value={formData.name}
+              value={touched.name ? formData.name : placeholders.name}
               onChange={handleInputChange}
+              onFocus={() => handleInputFocus('name')}
               placeholder="Andrea"
             />
           </div>
@@ -67,8 +89,9 @@ const ContactUsSection: React.FC = () => {
             <input
               type="email"
               name="email"
-              value={formData.email}
+              value={touched.email ? formData.email : placeholders.email}
               onChange={handleInputChange}
+              onFocus={() => handleInputFocus('email')}
               placeholder="andrea@gmail.com"
             />
           </div>
@@ -78,8 +101,9 @@ const ContactUsSection: React.FC = () => {
             <input
               type="text"
               name="theme"
-              value={formData.theme}
+              value={touched.theme ? formData.theme : placeholders.theme}
               onChange={handleInputChange}
+              onFocus={() => handleInputFocus('theme')}
               placeholder="Job"
             />
           </div>
@@ -89,8 +113,9 @@ const ContactUsSection: React.FC = () => {
             <input
               type="text"
               name="message"
-              value={formData.message}
+              value={touched.message ? formData.message : placeholders.message}
               onChange={handleInputChange}
+              onFocus={() => handleInputFocus('message')}
               placeholder="Your message"
             />
           </div>
@@ -103,5 +128,3 @@ const ContactUsSection: React.FC = () => {
 };
 
 export default ContactUsSection;
-
-

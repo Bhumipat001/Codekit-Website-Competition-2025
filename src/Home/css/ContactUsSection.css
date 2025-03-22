@@ -93,7 +93,7 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.18px;
-    color: #070707;
+    color: #07070777;
     margin-bottom: 5px;
   }
   
@@ -108,20 +108,34 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.21px;
-    color: #000000;
+    color: rgba(22, 22, 22, 0.15);
     background-color: #ffffff;
   }
   
   .form-field input::placeholder,
   .form-field textarea::placeholder {
-    color: #161616;
+    color: rgba(22, 22, 22, 0.1);
   }
-  
+
+  .form-field input:not(:placeholder-shown),
+  .form-field textarea:not(:placeholder-shown) {
+    color: #000000;
+  }
+
+  .form-field input:focus,
+  .form-field textarea:focus {
+    color: #000000;
+  }
+
   .form-field textarea {
     resize: vertical;
     min-height: 24px;
   }
-  
+
+  .form-field input {
+    outline: none;
+  }
+
   .submit-button {
     position: relative;
     background: #185cff;
@@ -163,5 +177,3 @@
       max-width: 540px;
     }
   }
-  
-  
